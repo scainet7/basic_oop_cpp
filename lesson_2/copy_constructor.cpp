@@ -22,7 +22,7 @@ class MyClass
 				arr[i] = i;
 			std::cout << this << "\tThe constructor is called\n";
 		}
-		MyClass(const MyClass &other)// Конструктор оператора копирования
+		MyClass(const MyClass &other)// Конструктор копирования
 		{
 			this->Size = other.Size;
 			this->arr = new int[other.Size];
