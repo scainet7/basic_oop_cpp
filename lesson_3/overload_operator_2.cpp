@@ -1,15 +1,18 @@
 /*
 Перегрузка оператора равенства "==" и не равенства "!="
 */
+
 #include <iostream>
 
 class MyClass
 {
 	private:
-		int Size;
 
+		int Size;
 	public:
+
 		int *arr;
+
 		MyClass(int size)
 		{
 			this->Size = size;
@@ -18,6 +21,7 @@ class MyClass
 				arr[i] = i;
 			std::cout << this << "\tThe constructor is called\n";
 		}
+
 		MyClass(const MyClass &other)
 		{
 			this->Size = other.Size;
@@ -26,6 +30,7 @@ class MyClass
 				this->arr[i] = other.arr[i];
 			std::cout << this << "\tThe constructor coppy is called\n";
 		}
+
 		MyClass & operator = (const MyClass &other) //конструткор оператора присваивания
 		{
 			std::cout << this << "\tThe operator =\n";
@@ -37,6 +42,7 @@ class MyClass
 				this->arr[i] = other.arr[i];
 			return (*this);
 		}
+
 		~MyClass()
 		{
 				std::cout << this << "\tThe destructor is called\n";
@@ -47,20 +53,23 @@ class MyClass
 class Point
 {
 	private:
+
 		int x;
 		int y;
-
 	public:
+
 		Point() //конструктор по умолчанию
 		{
 			x = 0;
 			y = 0;
 		}
+
 		Point(int value_x, int value_y)
 		{
 			x = value_x;
 			y = value_y;
 		}
+
 		Point(int value_x, bool boo)
 		{
 			x = value_x;
@@ -69,16 +78,19 @@ class Point
 			else
 				y = -1;
 		}
+
 		bool operator == (const Point &other)
 		{
 			return (this->x == other.x && this->y == other.y);
 			
 		}
+
 		bool operator != (const Point &other)
 		{
 			return (!(this->x == other.x && this->y == other.y));
 			
 		}
+
 		int GetX()
 		{
 			return (x);
@@ -103,6 +115,7 @@ class Point
 			std::cout << "X = " << x << "\t Y = " << y << std::endl;
 		}
 };
+
 int main()
 {
 	bool res;

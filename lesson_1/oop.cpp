@@ -20,6 +20,7 @@
 class Human
 {
     public: //Модификатор доступа
+    
         int age;
         std::string name;
 };
@@ -27,6 +28,7 @@ class Human
 class Point
 {
      public:
+
         int x;
         int y;
         int z;

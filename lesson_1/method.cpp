@@ -4,6 +4,7 @@
 class Human
 {
     public:
+    
         int age;
         int weight;
         std::string name;

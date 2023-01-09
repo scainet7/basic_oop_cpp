@@ -10,10 +10,12 @@
 class MyClass
 {
 	private:
-		int Size;
 
+		int Size;
 	public:
+
 		int *arr;
+
 		MyClass(int size)
 		{
 			this->Size = size;
@@ -22,6 +24,7 @@ class MyClass
 				arr[i] = i;
 			std::cout << this << "\tThe constructor is called\n";
 		}
+
 		MyClass(const MyClass &other)// Конструктор копирования
 		{
 			this->Size = other.Size;
@@ -30,6 +33,7 @@ class MyClass
 				this->arr[i] = other.arr[i];
 			std::cout << this << "\tThe constructor coppy is called\n";
 		}
+		
 		~MyClass()
 		{
 				std::cout << this << "\tThe destructor is called\n";

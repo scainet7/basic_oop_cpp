@@ -12,11 +12,12 @@
 class Point
 {
     private:
+
 		int x;
     	int y;
     	int z;
-    
 	public:
+	
 		int GetX()
 		{
 			return (x);

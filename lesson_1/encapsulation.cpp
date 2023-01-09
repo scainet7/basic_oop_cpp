@@ -3,12 +3,13 @@
 class CoffeGrinder
 {
     private:
+
         bool Check_Volt()
         {
             return (true);
         }
-
     public:
+    
         void Start()
         {
             if (Check_Volt())

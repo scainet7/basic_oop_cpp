@@ -12,22 +12,25 @@
 class Point
 {
 	private:
+
 		int x;
 		int y;
-
 	public:
+
 		Point()
 		{
 			x = 0;
 			y = 0;
 			std::cout << this << "\tconstructor\n";
 		}
+
 		Point(int value_x, int value_y)
 		{
 			x = value_x;
 			y = value_y;
 			std::cout << this << "\tconstructor\n";
 		}
+		
 		int GetX()
 		{
 			return (x);

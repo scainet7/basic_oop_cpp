@@ -17,15 +17,17 @@
 class Point
 {
 	private:
+
 		int x;
 		int y;
-
 	public:
+
 		Point(int value_x, int value_y) // Конструктор
 		{
 			x = value_x;
 			y = value_y;
 		}
+		
 		int GetX()
 		{
 			return (x);

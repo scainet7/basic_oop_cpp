@@ -14,6 +14,7 @@
 class Human
 {
     public:
+
         int x;
 
         void Print()
@@ -22,8 +23,8 @@ class Human
             PrintY();
             PrintZ();
         }
-
     private:
+
         int y;
 
         void PrintY()
@@ -33,7 +34,9 @@ class Human
         }
 
     protected:
+
         int z;
+        
          void PrintZ()
         {
             std::cout << "PrintZ()\n";

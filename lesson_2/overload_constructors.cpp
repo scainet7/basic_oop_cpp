@@ -3,20 +3,23 @@
 class Point
 {
 	private:
+
 		int x;
 		int y;
-
 	public:
+
 		Point() //конструктор по умолчанию
 		{
 			x = 0;
 			y = 0;
 		}
+
 		Point(int value_x, int value_y)
 		{
 			x = value_x;
 			y = value_y;
 		}
+
 		Point(int value_x, bool boo)
 		{
 			x = value_x;
@@ -25,6 +28,7 @@ class Point
 			else
 				y = -1;
 		}
+		
 		int GetX()
 		{
 			return (x);

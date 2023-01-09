@@ -7,9 +7,10 @@
 class Point
 {
 	private:
-		int *array;
 
+		int *array;
 	public:
+
 		Point(int size)
 		{
 			array = new int[size];
@@ -19,6 +20,7 @@ class Point
 			for (int i = 0; i < size; i++)
 				std::cout << array[i] << std::endl;
 		}
+
 		~Point()
 		{
 			delete[] array;
